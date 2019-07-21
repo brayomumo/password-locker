@@ -19,3 +19,14 @@ class User:
         '''
 
         return cls.user_list
+
+    @classmethod
+    def comfirm_user(cls, username, password):
+        '''
+        confirms wheteher the user is in the list
+        '''
+        current_user = ''
+        for user in User.user_list:
+            if(User..username == username and user.password == password):
+                current_user == User.username
+            return current_user
