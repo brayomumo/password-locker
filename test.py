@@ -44,7 +44,12 @@ class TestUser(unittest.TestCase):
         self.assertEqual(User.show_user(),User.user_list)
 
 
-    # def save_credential(self):
+    def save_credential(self):
+        ''' 
+        test saving credentials
+        '''
+        self.new_credential.save_credential()
+        self.assertEqual(len(Credentials.credentials_list),1)
 
 
 if __name__ == '__main__':
