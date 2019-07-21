@@ -24,6 +24,26 @@ class Credentials:
         '''
         Credentials.credentials_list.remove(self)
 
+    def generate_password():
+        chars = "abcdefghijklmnopqrstuvwxyz/*-=)%@("
+        password =  ""
+        for i in range(10):
+            password += random.choice(chars) + i
+        return password
+
+    @classmethod
+    def find_by_accountname(cls, account_name):
+        '''
+        function to search for credentials using accountname 
+        '''
+        for credential in cls.credentials_list:
+            if credential.account_name == account_name:
+                return credential
+
+    @classmethod
+    def display_credentials(self):
+        
+    
     
     
     
