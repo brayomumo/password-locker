@@ -41,7 +41,12 @@ class Credentials:
                 return credential
 
     @classmethod
-    def display_credentials(self):
+    def display_credentials(cls):
+        '''
+        function which returns the credentials list
+        '''
+        return cls.credentials_list
+
         
     
     
