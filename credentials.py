@@ -14,8 +14,16 @@ class Credentials:
         '''
         function to save credentials
         '''
-        
+
         Credentials.credentials_list.append(self)
+
+    
+    def delete_credential(self):
+        '''
+        deletes saved credentials
+        '''
+        Credentials.credentials_list.remove(self)
+
     
     
     
