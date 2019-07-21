@@ -1,3 +1,4 @@
+
 class User:
 
     #store the user 
@@ -10,3 +11,11 @@ class User:
 
     def save_user(self):
         User.user_list.append(self)
+
+    @classmethod
+    def show_user(cls):
+        '''
+        function returns list of users
+        '''
+
+        return cls.user_list
