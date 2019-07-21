@@ -1,6 +1,6 @@
 import unittest
 from password import User
-import credentials
+from  credentials import Credentials 
 
 class TestUser(unittest.TestCase):
     '''
@@ -11,6 +11,7 @@ class TestUser(unittest.TestCase):
         setup method to run before each case
         '''
         self.new_user = User("brian", "mumo")
+        self.new_credential = Credentials("twitter", "brayomull7", "mumo")
 
     def test_init(self):
         '''
@@ -18,6 +19,9 @@ class TestUser(unittest.TestCase):
         '''
         self.assertEqual(self.new_user.username,"brian")
         self.assertEqual(self.new_user.password, "mumo")
+        self.assertEqual(self.new_credential.account_name,"twitter")
+        self.assertEqual(self.new_credential.account_uName, "brayomull7")
+        self.assertEqual(self.new_credential.account_password, "mumo")
 
     def test_save_user(self):
         '''
@@ -31,8 +35,17 @@ class TestUser(unittest.TestCase):
         test does a clean up after every test
         '''
         User.user_list = []
-        
 
 
-    if __name__ == '__main__':
-        unittest.main()
+    def test_show_users(self):
+        '''
+        test show user function
+        '''
+        self.assertEqual(User.show_user(),User.user_list)
+
+
+    # def save_credential(self):
+
+
+if __name__ == '__main__':
+    unittest.main()
