@@ -3,7 +3,7 @@
 This is a python application used to store passwords and personal details for user accounts
 By *Brian Paul*. My first attempt at using python
 
-##Descrption 
+## Descrption 
 This is python-shell based application which allows users to create an account. 
 Once the login inti the account they are able to create a credentials details which include the account name, the username they use in that account and the password the want to save.
 
