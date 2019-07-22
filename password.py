@@ -1,4 +1,4 @@
-
+import random
 class User:
 
     #store the user 
@@ -12,6 +12,14 @@ class User:
     def save_user(self):
         User.user_list.append(self)
 
+    def generate_password():
+       chars = "abcdefghijklmnopqrstuvwxyz/;'[]=)(*$@)"
+       password = ""
+       for i in range(10):
+           password+=random.choice(chars)
+       return password          #computated functions give a return value
+
+
     @classmethod
     def show_user(cls):
         '''
@@ -21,12 +29,12 @@ class User:
         return cls.user_list
 
     @classmethod
-    def comfirm_user(cls, username, password):
+    def confirm_user(cls, username, password):
         '''
         confirms wheteher the user is in the list
         '''
         current_user = ''
         for user in User.user_list:
-            if(User..username == username and user.password == password):
-                current_user == User.username
+            if user.username == username and user.password == password:
+                current_user == user.username
             return current_user
