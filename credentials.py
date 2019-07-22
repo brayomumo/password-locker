@@ -28,7 +28,7 @@ class Credentials:
         chars = "abcdefghijklmnopqrstuvwxyz/*-=)%@("
         password =  ""
         for i in range(10):
-            password += random.choice(chars) + i
+            password += random.choice(chars) + str(i)
         return password
 
     @classmethod
