@@ -20,6 +20,9 @@ Once the login inti the account they are able to create a credentials details wh
 
 
 ## Installation
+1. Initialize terminal
+2. Clone the project using the command `git clone https://github.com/brayomumo/password-locker`
+3. Run `
 
 1. Clone the repository in your Terminal
 2. Run your python version alongside your main python file name

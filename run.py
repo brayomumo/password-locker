@@ -2,7 +2,7 @@
 
 from password import User
 from credentials import Credentials
-from colorama import Fore, Style, Back
+
 
 #create user
 
@@ -66,17 +66,6 @@ def gennerate_pwd():
 
 #main function
 def main():
-    print(Fore.GREEN +
-          "####################################################################\n"
-          "#       ____                           _  _               _         #\n"
-          "#      |  _ \ __ _ ___ _____      ____| || |    ___   ___| | __     #\n"
-          "#      | |_) / _` / __/ __\ \ /\ / / _` || |   / _ \ / __| |/ /     #\n"
-          "#      |  __/ (_| \__ \__\ \ V  V / (_| || |__| (_) | (__|   <      #\n"
-          "#      |_|   \__,_|___/___/ \_/\_/ \__,_||_____\___/ \___|_|\_\     #\n"
-          + Style.RESET_ALL)
-    print('--------------------------------------------------------------------')
-    print('-----------------------### Password Locker ###----------------------')
-
     print("Hello \n Welcome to your account manager app. What is your name?")
     my_name = input()
 
