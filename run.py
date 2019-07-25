@@ -180,8 +180,7 @@ def main():
 
                             # loops through credential object & gets each user
                                 for credential in display_cred():
-                                    print(
-                                        f"***Here is a list of {u_name}'s credentials: {credential.account_name}-{credential.account_uName}-{credential.accountpassword}***")
+                                    print(f"***Here is a list of {u_name}'s credentials: {credential.account_name}-{credential.account_uName}-{credential.account_password}***")
                                     print('\n')
                             else:
                                 print("***No user credentials saved***")
