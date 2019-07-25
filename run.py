@@ -181,8 +181,7 @@ def main():
 
                             search_username = input()
                             if search(search_username):
-                                search_credential = search(
-                                    search_username)
+                                search_credential = search(search_username)
                                 delete(search_credential)
                                 print(f"{search_username} is deleted")
 
